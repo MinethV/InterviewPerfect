@@ -10,3 +10,7 @@ At present, the field of interview preparation has been restricted to convention
 These limitations will be addressed in our interview simulator, which presents a holistic and tailored approach towards interview training. The candidate’s nonverbal and verbal communication will be analysed by the simulation using sophisticated facial expression and voice recognition technologies. The analysis will evaluate aspects such as eye contact, face direction, facial expressions, Use of filler words. 
 
 These specific comments would help them note aspects that could be improved in their next interviews, and thus they would make suitable amendments on the same. Candidates will also be able to test their skill of giving standard interview responses as if they are sitting with an actual interviewer in a simulated environment. </p>
+
+
+
+![Uploading Screenshot 2024-01-03 at 19.35.11.png…]()
