@@ -13,4 +13,4 @@ These specific comments would help them note aspects that could be improved in t
 
 
 
-<img src="happyman.jpg" />
+
