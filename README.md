@@ -1,3 +1,6 @@
+INTERVIEW PERFECT 
+
+
 Job interview is one of the most important events during any hiring process because it gives both seekers and employers an opportunity to decide wisely whether to choose this candidate or not. Nonetheless, interviewing itself often induces stress which, in turn, may prevent one of the best candidates from giving a good presentation. In this regard, it becomes very tough for the graduates and interns because most of them are lacking the actual fieldwork experiences in an interview environment.
 
 In order to overcome this challenge, we propose a new interview simulator with facial expression and voice recognition system. This latest technology will create a practical and virtual reality setting where job applicants ranging from rookies to professionals can sharpen their interview skills while receiving personalised assistance to build the much needed self-confidence for passing live job interviews.
