@@ -1,0 +1,48 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+.headingCol{
+    padding-top: 9vw;
+    padding-left: 9vw;
+}
+.heading{
+    font-weight: bold;
+    font-size: 3vw;
+    color: #070748;
+}
+.homeImage{
+    background-color: #e5f0fb;
+    border-radius: 1vw;
+}
+#IntImg1{
+    padding: 10vw 5vw 5vw 4vw;
+}
+.navLink{
+    font-weight: 450;
+}
