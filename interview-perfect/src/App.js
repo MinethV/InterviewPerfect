@@ -1,6 +1,7 @@
 import './App.css';
 import { Home } from './pages/Home';  //importing Home page from pages
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import firebase from '../../firebase';
 
 
 function App() {
