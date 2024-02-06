@@ -1,16 +1,70 @@
-<h1> INTERVIEW PERFECT </h1>
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<p> Job interview is one of the most important events during any hiring process because it gives both seekers and employers an opportunity to decide wisely whether to choose this candidate or not. Nonetheless, interviewing itself often induces stress which, in turn, may prevent one of the best candidates from giving a good presentation. In this regard, it becomes very tough for the graduates and interns because most of them are lacking the actual fieldwork experiences in an interview environment. 
-  
-In order to overcome this challenge, we propose a new interview simulator with facial expression and voice recognition system. This latest technology will create a practical and virtual reality setting where job applicants ranging from rookies to professionals can sharpen their interview skills while receiving personalised assistance to build the much needed self-confidence for passing live job interviews.
+## Available Scripts
 
-At present, the field of interview preparation has been restricted to conventional approaches that include both practice interviews and internet websites. The problem is that most of these methods lack in giving such personalised feedback and a realistic approach to practising the process of interviewing. Therefore, many potential employees do not know how to market themselves effectively in an interview, thus leading to wasted chances and stagnation in their careers. 
+In the project directory, you can run:
 
-These limitations will be addressed in our interview simulator, which presents a holistic and tailored approach towards interview training. The candidate’s nonverbal and verbal communication will be analysed by the simulation using sophisticated facial expression and voice recognition technologies. The analysis will evaluate aspects such as eye contact, face direction, facial expressions, Use of filler words. 
+### `npm start`
 
-These specific comments would help them note aspects that could be improved in their next interviews, and thus they would make suitable amendments on the same. Candidates will also be able to test their skill of giving standard interview responses as if they are sitting with an actual interviewer in a simulated environment. </p>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
