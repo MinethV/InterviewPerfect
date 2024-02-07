@@ -1,21 +1,21 @@
 import './App.css';
+import NavBar from './components/NavBar';
 import { Home } from './pages/Home';  //importing Home page from pages
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import { Review } from './pages/Review';  //importing Home page from pages
+import { Route, Routes } from 'react-router-dom';
 
 
 
 function App() {
-
-  return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          {/*Routes for the home page */}
-          <Route path='/' element={<Home />}/>
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
+    return(
+        <>
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/review" element={<Home/>}/>
+            </Routes>
+        </>
+    )
 }
 
 export default App;
