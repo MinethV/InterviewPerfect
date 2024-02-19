@@ -1,110 +1,48 @@
 import React from "react";
 import NavBar from '../components/NavBar';
 import backgroundImage from "../images/industry.png";
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { ListGroup } from 'react-bootstrap';
+
 
 
 const Industry = () => {
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
-      <NavBar />
     
-      
-      <div className="p-4 border border-gray-300 rounded-lg ">
-        <div className="mb-4">
-          <div className="text-2xl mb-10 mt-24 text-center">
-            What field are you interested in?
-          </div>
-          <div className="mt-4"> {/* Adjusted margin top */}
-            <button className="relative block mx-auto w-1/2 px-6 py-3 border-b border-gray-300 rounded-lg hover:bg-gray-100 mb-2 text-left text-xl">
-              Software Engineering
-              <span className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                {/* Arrow pointer */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </button>
-            <button className="relative block mx-auto w-1/2 px-6 py-3 border-b border-gray-300 rounded-lg hover:bg-gray-100 mb-2 text-left text-xl">
-              Civil Engineering
-              <span className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                {/* Arrow pointer */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </button>
-            <button className="relative block mx-auto w-1/2 px-6 py-3 border-b border-gray-300 rounded-lg hover:bg-gray-100 mb-2 text-left text-xl">
-              Business Management
-              <span className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                {/* Arrow pointer */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </button>
-            <button className="relative block mx-auto w-1/2 px-6 py-3 border-b border-gray-300 rounded-lg hover:bg-gray-100 mb-2 text-left text-xl">
-              HR Management
-              <span className="absolute right-2 top-1/2 transform -translate-y-1/2">
-                {/* Arrow pointer */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
+    <div className="bg-gray-100 min-h-screen" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+      {/* <NavBar /> */}
+      <Container className="py-5 ">
+        <Row className="align-items-center mt-5">
+          <Col md={6} className="mx-auto mt-5">
+            <h1 className="text-center text-3xl font-bold mb-5 font-family-MicrosoftSansSerif" style={{ fontSize: '34px' }}>
+              What field are you interestrd in?
+            </h1>
+            <ListGroup className="shadow-lg font-family-MicrosoftSansSerif " style={{ fontSize: '26px' }}>
+              <ListGroup.Item className="d-flex justify-content-between align-items-center">
+                Software Engineering
+                <FontAwesomeIcon icon={faChevronRight} />
+              </ListGroup.Item>
+              <ListGroup.Item className="d-flex justify-content-between align-items-center">
+                Civil Engineering
+                <FontAwesomeIcon icon={faChevronRight} />
+              </ListGroup.Item>
+              <ListGroup.Item className="d-flex justify-content-between align-items-center">
+                Business Management
+                <FontAwesomeIcon icon={faChevronRight} />
+              </ListGroup.Item>
+              <ListGroup.Item className="d-flex justify-content-between align-items-center">
+                HR Management
+                <FontAwesomeIcon icon={faChevronRight} />
+              </ListGroup.Item>
+            </ListGroup>
+          </Col>
+        </Row>
+      </Container>
+    </div>
     
-  </div>
-  
   );
 };
 
 export default Industry;
-
-
-
