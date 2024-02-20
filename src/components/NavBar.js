@@ -1,5 +1,19 @@
 import React from "react";
+import { useAuth0 } from '@auth0/auth0-react';
 import logo from '../images/logo.png';
+
+export const Loginbutton = () => {
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
+
+    return (
+        !isAuthenticated && (
+            <button onClick={() => loginWithRedirect()} className="btn btn-primary">
+                Sign In
+            </button>
+        )
+    )
+}
+
 export default function NavBar() {
     return (
         <>
@@ -20,7 +34,7 @@ export default function NavBar() {
                                 <a className="nav-link fs-5 navLink" href="#!">Review</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link fs-5 navLink" href="#!">Log In</a>
+                                <Loginbutton/>
                             </li>
                             <button type="button" className="btn btn-outline-primary">Get Started</button>
                         </ul>
