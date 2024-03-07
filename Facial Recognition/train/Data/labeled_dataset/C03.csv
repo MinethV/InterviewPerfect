@@ -1,0 +1,201 @@
+Sr no,Frame,Expression,Direction,Eye Movement,Label
+1,c3_face1.jpg,neutral,Forward,closed,0
+2,c3_face2.jpg,neutral,Forward,closed,0
+3,c3_face3.jpg,neutral,Forward,closed,0
+4,c3_face4.jpg,neutral,Forward,down,0
+5,c3_face5.jpg,neutral,Forward,down,0
+6,c3_face6.jpg,neutral,Looking Up,down,0
+7,c3_face7.jpg,sad,Forward,closed,0
+8,c3_face8.jpg,neutral,Looking Left,down,0
+9,c3_face9.jpg,,Looking Up,center,
+10,c3_face10.jpg,sad,Forward,down,0
+11,c3_face11.jpg,sad,Forward,down,0
+12,c3_face12.jpg,neutral,Forward,center,1
+13,c3_face13.jpg,neutral,Forward,closed,0
+14,c3_face14.jpg,neutral,Looking Up,center,1
+15,c3_face15.jpg,sad,Forward,center,0
+16,c3_face16.jpg,neutral,Forward,center,1
+17,c3_face17.jpg,neutral,Forward,down,0
+18,c3_face18.jpg,neutral,Forward,down,0
+19,c3_face19.jpg,neutral,Forward,down,0
+20,c3_face20.jpg,neutral,Looking Up,down,0
+21,c3_face21.jpg,neutral,Forward,center,1
+22,c3_face22.jpg,sad,Forward,center,0
+23,c3_face23.jpg,sad,Forward,center,0
+24,c3_face24.jpg,neutral,Forward,down,0
+25,c3_face25.jpg,neutral,Looking Up,center,1
+26,c3_face26.jpg,neutral,Looking Up,down,0
+27,c3_face27.jpg,neutral,Forward,down,0
+28,c3_face28.jpg,sad,Forward,center,0
+29,c3_face29.jpg,sad,Forward,center,0
+30,c3_face30.jpg,sad,Looking Up,down,0
+31,c3_face31.jpg,neutral,Looking Up,right,0
+32,c3_face32.jpg,neutral,Forward,center,1
+33,c3_face33.jpg,sad,Looking Up,down,0
+34,c3_face34.jpg,neutral,Looking Up,down,0
+35,c3_face35.jpg,neutral,Forward,down,0
+36,c3_face36.jpg,sad,Forward,down,0
+37,c3_face37.jpg,sad,Forward,down,0
+38,c3_face38.jpg,angry,Forward,down,0
+39,c3_face39.jpg,neutral,Forward,down,0
+40,c3_face40.jpg,angry,Forward,down,0
+41,c3_face41.jpg,neutral,Forward,closed,0
+42,c3_face42.jpg,angry,Forward,down,0
+43,c3_face43.jpg,neutral,Forward,closed,0
+44,c3_face44.jpg,neutral,Forward,center,1
+45,c3_face45.jpg,angry,Forward,down,0
+46,c3_face46.jpg,angry,Forward,down,0
+47,c3_face47.jpg,neutral,Forward,center,1
+48,c3_face48.jpg,neutral,Forward,closed,0
+49,c3_face49.jpg,neutral,Looking Up,up,0
+50,c3_face50.jpg,neutral,Forward,center,1
+51,c3_face51.jpg,sad,Forward,down,0
+52,c3_face52.jpg,sad,Forward,down,0
+53,c3_face53.jpg,sad,Forward,closed,0
+54,c3_face54.jpg,sad,Forward,closed,0
+55,c3_face55.jpg,angry,Forward,up,0
+56,c3_face56.jpg,neutral,Looking Up,closed,0
+57,c3_face57.jpg,neutral,Forward,center,1
+58,c3_face58.jpg,neutral,Forward,closed,0
+59,c3_face59.jpg,neutral,Looking Up,left,0
+60,c3_face60.jpg,neutral,Looking Up,up,0
+61,c3_face61.jpg,,Looking Up,center,
+62,c3_face62.jpg,angry,Forward,center,0
+63,c3_face63.jpg,sad,Forward,center,0
+64,c3_face64.jpg,sad,Forward,down,0
+65,c3_face65.jpg,angry,Forward,center,0
+66,c3_face66.jpg,neutral,Forward,center,1
+67,c3_face67.jpg,sad,Forward,center,0
+68,c3_face68.jpg,sad,Forward,center,0
+69,c3_face69.jpg,angry,Forward,center,0
+70,c3_face70.jpg,sad,Looking Up,closed,0
+71,c3_face71.jpg,sad,Forward,center,0
+72,c3_face72.jpg,angry,Forward,center,0
+73,c3_face73.jpg,sad,Forward,center,0
+74,c3_face74.jpg,neutral,Forward,closed,0
+75,c3_face75.jpg,sad,Forward,closed,0
+76,c3_face76.jpg,angry,Forward,center,0
+77,c3_face77.jpg,sad,Forward,center,0
+78,c3_face78.jpg,neutral,Forward,center,1
+79,c3_face79.jpg,sad,Forward,center,0
+80,c3_face80.jpg,sad,Forward,center,0
+81,c3_face81.jpg,sad,Forward,center,0
+82,c3_face82.jpg,sad,Looking Up,center,0
+83,c3_face83.jpg,neutral,Forward,center,1
+84,c3_face84.jpg,neutral,Looking Up,up,0
+85,c3_face85.jpg,neutral,Looking Up,up,0
+86,c3_face86.jpg,neutral,Looking Up,center,1
+87,c3_face87.jpg,neutral,Forward,center,1
+88,c3_face88.jpg,neutral,Forward,closed,0
+89,c3_face89.jpg,happy,Forward,up,1
+90,c3_face90.jpg,neutral,Looking Up,up,0
+91,c3_face91.jpg,,Looking Up,up,
+92,c3_face92.jpg,neutral,Looking Up,up,0
+93,c3_face93.jpg,sad,Forward,down,0
+94,c3_face94.jpg,sad,Forward,down,0
+95,c3_face95.jpg,neutral,Forward,down,0
+96,c3_face96.jpg,angry,Forward,center,0
+97,c3_face97.jpg,neutral,Forward,center,1
+98,c3_face98.jpg,neutral,Forward,center,1
+99,c3_face99.jpg,neutral,Forward,center,1
+100,c3_face100.jpg,sad,Looking Up,center,0
+101,c3_face101.jpg,neutral,Looking Up,center,1
+102,c3_face102.jpg,neutral,Looking Up,center,1
+103,c3_face103.jpg,neutral,Looking Up,up,0
+104,c3_face104.jpg,,Looking Up,up,
+105,c3_face105.jpg,,Looking Up,up,
+106,c3_face106.jpg,neutral,Looking Up,center,1
+107,c3_face107.jpg,angry,Forward,down,0
+108,c3_face108.jpg,,,,
+109,c3_face109.jpg,sad,Forward,center,0
+110,c3_face110.jpg,angry,Forward,center,0
+111,c3_face111.jpg,sad,Forward,closed,0
+112,c3_face112.jpg,neutral,Forward,center,1
+113,c3_face113.jpg,angry,Forward,center,0
+114,c3_face114.jpg,neutral,Forward,down,0
+115,c3_face115.jpg,neutral,Forward,down,0
+116,c3_face116.jpg,neutral,Looking Up,closed,0
+117,c3_face117.jpg,neutral,Looking Up,center,1
+118,c3_face118.jpg,sad,Looking Up,center,0
+119,c3_face119.jpg,sad,Forward,center,0
+120,c3_face120.jpg,angry,Forward,center,0
+121,c3_face121.jpg,neutral,Forward,closed,0
+122,c3_face122.jpg,neutral,Looking Up,center,1
+123,c3_face123.jpg,neutral,Forward,center,1
+124,c3_face124.jpg,sad,Forward,down,0
+125,c3_face125.jpg,neutral,Forward,closed,0
+126,c3_face126.jpg,sad,Forward,down,0
+127,c3_face127.jpg,,,,
+128,c3_face128.jpg,,,,
+129,c3_face129.jpg,,,,
+130,c3_face130.jpg,,,,
+131,c3_face131.jpg,,,,
+132,c3_face132.jpg,,,,
+133,c3_face133.jpg,,,,
+134,c3_face134.jpg,angry,Forward,center,0
+135,c3_face135.jpg,sad,Forward,down,0
+136,c3_face136.jpg,angry,Forward,center,0
+137,c3_face137.jpg,sad,Forward,center,0
+138,c3_face138.jpg,angry,Forward,down,0
+139,c3_face139.jpg,,,,
+140,c3_face140.jpg,,,,
+141,c3_face141.jpg,,,,
+142,c3_face142.jpg,,,,
+143,c3_face143.jpg,,,,
+144,c3_face144.jpg,,,,
+145,c3_face145.jpg,,,,
+146,c3_face146.jpg,,,,
+147,c3_face147.jpg,angry,Forward,down,0
+148,c3_face148.jpg,sad,Looking Up,down,0
+149,c3_face149.jpg,angry,Forward,down,0
+150,c3_face150.jpg,neutral,Forward,center,1
+151,c3_face151.jpg,sad,Forward,center,0
+152,c3_face152.jpg,sad,Forward,center,0
+153,c3_face153.jpg,angry,Forward,closed,0
+154,c3_face154.jpg,angry,Forward,center,0
+155,c3_face155.jpg,neutral,Forward,center,1
+156,c3_face156.jpg,neutral,Looking Up,up,0
+157,c3_face157.jpg,neutral,Looking Up,up,0
+158,c3_face158.jpg,neutral,Looking Up,center,1
+159,c3_face159.jpg,neutral,Looking Up,up,0
+160,c3_face160.jpg,neutral,Looking Up,up,0
+161,c3_face161.jpg,sad,Forward,center,0
+162,c3_face162.jpg,sad,Forward,center,0
+163,c3_face163.jpg,neutral,Looking Up,center,1
+164,c3_face164.jpg,neutral,Looking Up,center,1
+165,c3_face165.jpg,sad,Forward,center,0
+166,c3_face166.jpg,neutral,Forward,center,1
+167,c3_face167.jpg,,Forward,closed,
+168,c3_face168.jpg,neutral,Looking Up,center,1
+169,c3_face169.jpg,sad,Forward,center,0
+170,c3_face170.jpg,sad,Looking Up,right,0
+171,c3_face171.jpg,neutral,Looking Up,left,0
+172,c3_face172.jpg,neutral,Looking Up,left,0
+173,c3_face173.jpg,neutral,Looking Up,right,0
+174,c3_face174.jpg,,Looking Up,up,
+175,c3_face175.jpg,,Looking Up,up,
+176,c3_face176.jpg,neutral,Looking Up,up,0
+177,c3_face177.jpg,neutral,Looking Up,up,0
+178,c3_face178.jpg,,Looking Up,up,
+179,c3_face179.jpg,,Looking Up,up,
+180,c3_face180.jpg,,Looking Up,up,
+181,c3_face181.jpg,neutral,Looking Up,center,1
+182,c3_face182.jpg,sad,Forward,center,0
+183,c3_face183.jpg,angry,Forward,center,0
+184,c3_face184.jpg,sad,Forward,center,0
+185,c3_face185.jpg,neutral,Forward,closed,0
+186,c3_face186.jpg,angry,Forward,center,0
+187,c3_face187.jpg,sad,Forward,center,0
+188,c3_face188.jpg,sad,Forward,center,0
+189,c3_face189.jpg,neutral,Looking Up,closed,0
+190,c3_face190.jpg,neutral,Looking Up,closed,0
+191,c3_face191.jpg,neutral,Looking Up,up,0
+192,c3_face192.jpg,neutral,Looking Up,left,0
+193,c3_face193.jpg,neutral,Looking Left,closed,0
+194,c3_face194.jpg,neutral,Looking Left,left,0
+195,c3_face195.jpg,angry,Forward,down,0
+196,c3_face196.jpg,,Looking Left,down,
+197,c3_face197.jpg,angry,Forward,down,0
+198,c3_face198.jpg,angry,Looking Left,down,0
+199,c3_face199.jpg,,Looking Left,down ,
+200,c3_face200.jpg,neutral,Forward,closed,0

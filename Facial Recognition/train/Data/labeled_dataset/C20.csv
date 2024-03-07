@@ -1,0 +1,201 @@
+Sr No,Frame,Expression,Direction,Eye Movement,Label
+1,c20_face1.jpg,,,,
+2,c20_face2.jpg,,,,
+3,c20_face3.jpg,,,,
+4,c20_face4.jpg,,,,
+5,c20_face5.jpg,,,,
+6,c20_face6.jpg,neutral,Forward,closed,0
+7,c20_face7.jpg,neutral,Forward,closed,0
+8,c20_face8.jpg,neutral,Forward,right,0
+9,c20_face9.jpg,neutral,Forward,right,0
+10,c20_face10.jpg,neutral,Forward,closed,0
+11,c20_face11.jpg,neutral,Forward,center,0
+12,c20_face12.jpg,neutral,Forward,down,0
+13,c20_face13.jpg,neutral,Looking Down,center,0
+14,c20_face14.jpg,neutral,Forward,closed,0
+15,c20_face15.jpg,sad,Forward,right,0
+16,c20_face16.jpg,neutral,Forward,center,0
+17,c20_face17.jpg,neutral,Forward,right,0
+18,c20_face18.jpg,sad,Forward,closed,0
+19,c20_face19.jpg,neutral,Forward,center,0
+20,c20_face20.jpg,sad,Forward,closed,0
+21,c20_face21.jpg,neutral,Forward,left,0
+22,c20_face22.jpg,neutral,Forward,center,0
+23,c20_face23.jpg,sad,Looking Right,closed,0
+24,c20_face24.jpg,neutral,Forward,closed,0
+25,c20_face25.jpg,neutral,Forward,center,1
+26,c20_face26.jpg,neutral,Forward,center,0
+27,c20_face27.jpg,neutral,Forward,closed,0
+28,c20_face28.jpg,neutral,Forward,right,0
+29,c20_face29.jpg,neutral,Forward,right,0
+30,c20_face30.jpg,neutral,Forward,right,0
+31,c20_face31.jpg,neutral,Forward,closed,0
+32,c20_face32.jpg,neutral,Forward,center,0
+33,c20_face33.jpg,neutral,Forward,closed,0
+34,c20_face34.jpg,neutral,Forward,center,0
+35,c20_face35.jpg,angry,Looking Right,down,0
+36,c20_face36.jpg,neutral,Looking Down,down,0
+37,c20_face37.jpg,,,,
+38,c20_face38.jpg,neutral,Looking Left,center,0
+39,c20_face39.jpg,neutral,Looking Right,center,1
+40,c20_face40.jpg,neutral,Looking Down,center,0
+41,c20_face41.jpg,neutral,Looking Right,down,0
+42,c20_face42.jpg,neutral,Looking Down,center,0
+43,c20_face43.jpg,neutral,Looking Down,center,0
+44,c20_face44.jpg,,,,
+45,c20_face45.jpg,,Looking Down,,
+46,c20_face46.jpg,,Looking Down,,
+47,c20_face47.jpg,,Looking Down,,
+48,c20_face48.jpg,neutral,Forward,center,0
+49,c20_face49.jpg,neutral,Looking Down,center,0
+50,c20_face50.jpg,neutral,Looking Down,center,0
+51,c20_face51.jpg,neutral,Forward,closed,0
+52,c20_face52.jpg,neutral,Looking Down,center,0
+53,c20_face53.jpg,neutral,Forward,closed,0
+54,c20_face54.jpg,neutral,Forward,closed,0
+55,c20_face55.jpg,neutral,Forward,center,0
+56,c20_face56.jpg,neutral,Forward,center,0
+57,c20_face57.jpg,neutral,Forward,up,0
+58,c20_face58.jpg,neutral,Looking Down,center,1
+59,c20_face59.jpg,neutral,Looking Down,closed,0
+60,c20_face60.jpg,neutral,Looking Down,center,0
+61,c20_face61.jpg,neutral,Forward,center,0
+62,c20_face62.jpg,neutral,Looking Down,center,0
+63,c20_face63.jpg,neutral,Looking Down,closed,0
+64,c20_face64.jpg,neutral,Forward,right,0
+65,c20_face65.jpg,sad,Forward,closed,0
+66,c20_face66.jpg,neutral,Forward,right,0
+67,c20_face67.jpg,neutral,Forward,center,0
+68,c20_face68.jpg,neutral,Looking Right,right,0
+69,c20_face69.jpg,fear,Looking Right,closed,0
+70,c20_face70.jpg,,,,
+71,c20_face71.jpg,neutral,Looking Right,center,1
+72,c20_face72.jpg,neutral,Forward,center,0
+73,c20_face73.jpg,neutral,Forward,right,0
+74,c20_face74.jpg,neutral,Looking Down,center,0
+75,c20_face75.jpg,neutral,Looking Right,right,0
+76,c20_face76.jpg,neutral,Forward,center,0
+77,c20_face77.jpg,neutral,Forward,down,1
+78,c20_face78.jpg,sad,Forward,closed,0
+79,c20_face79.jpg,neutral,Forward,center,0
+80,c20_face80.jpg,,,,
+81,c20_face81.jpg,fear,Looking Right,closed,0
+82,c20_face82.jpg,neutral,Forward,right,0
+83,c20_face83.jpg,neutral,Forward,center,0
+84,c20_face84.jpg,neutral,Looking Right,right,0
+85,c20_face85.jpg,sad,Looking Down,closed,0
+86,c20_face86.jpg,neutral,Looking Right,right,0
+87,c20_face87.jpg,neutral,Looking Right,right,0
+88,c20_face88.jpg,fear,Looking Right,right,0
+89,c20_face89.jpg,,Looking Right,,
+90,c20_face90.jpg,fear,Looking Right,right,0
+91,c20_face91.jpg,angry,Forward,left,0
+92,c20_face92.jpg,fear,Looking Up,closed,0
+93,c20_face93.jpg,neutral,Forward,center,0
+94,c20_face94.jpg,angry,Looking Down,center,0
+95,c20_face95.jpg,sad,Forward,center,0
+96,c20_face96.jpg,angry,Looking Down,left,0
+97,c20_face97.jpg,neutral,Looking Down,down,0
+98,c20_face98.jpg,neutral,Looking Right,right,0
+99,c20_face99.jpg,angry,Looking Down,right,0
+100,c20_face100.jpg,neutral,Looking Right,right,0
+101,c20_face101.jpg,,Looking Down,,
+102,c20_face102.jpg,,,,
+103,c20_face103.jpg,,Looking Right,,
+104,c20_face104.jpg,fear,Looking Right,right,0
+105,c20_face105.jpg,fear,Looking Right,right,0
+106,c20_face106.jpg,fear,Looking Right,down,0
+107,c20_face107.jpg,fear,Forward,closed,0
+108,c20_face108.jpg,angry,Looking Right,right,0
+109,c20_face109.jpg,neutral,Looking Right,right,0
+110,c20_face110.jpg,angry,Looking Down,right,0
+111,c20_face111.jpg,fear,Looking Right,down,0
+112,c20_face112.jpg,neutral,Forward,center,0
+113,c20_face113.jpg,neutral,Forward,closed,0
+114,c20_face114.jpg,sad,Forward,closed,0
+115,c20_face115.jpg,,Forward,,
+116,c20_face116.jpg,neutral,Forward,closed,0
+117,c20_face117.jpg,sad,Looking Right,closed,0
+118,c20_face118.jpg,neutral,Forward,center,0
+119,c20_face119.jpg,neutral,Looking Right,center,0
+120,c20_face120.jpg,fear,Looking Right,closed,0
+121,c20_face121.jpg,sad,Forward,closed,0
+122,c20_face122.jpg,neutral,Looking Right,up,0
+123,c20_face123.jpg,neutral,Forward,closed,0
+124,c20_face124.jpg,,,,
+125,c20_face125.jpg,,,,
+126,c20_face126.jpg,neutral,Forward,up,0
+127,c20_face127.jpg,neutral,Forward,center,0
+128,c20_face128.jpg,neutral,Forward,closed,0
+129,c20_face129.jpg,neutral,Forward,closed,0
+130,c20_face130.jpg,sad,Forward,closed,0
+131,c20_face131.jpg,fear,Forward,closed,0
+132,c20_face132.jpg,neutral,Forward,right,0
+133,c20_face133.jpg,neutral,Forward,closed,0
+134,c20_face134.jpg,neutral,Forward,center,0
+135,c20_face135.jpg,neutral,Forward,down,0
+136,c20_face136.jpg,neutral,Looking Right,,
+137,c20_face137.jpg,neutral,Looking Up,,
+138,c20_face138.jpg,sad,Forward,closed,0
+139,c20_face139.jpg,neutral,Looking Up,,
+140,c20_face140.jpg,,,,
+141,c20_face141.jpg,neutral,Forward,right,0
+142,c20_face142.jpg,,,,
+143,c20_face143.jpg,,,,
+144,c20_face144.jpg,neutral,Looking Right,right,0
+145,c20_face145.jpg,neutral,Looking Right,right,0
+146,c20_face146.jpg,angry,Forward,closed,0
+147,c20_face147.jpg,happy,Looking Up,,
+148,c20_face148.jpg,,,,
+149,c20_face149.jpg,fear,Forward,closed,0
+150,c20_face150.jpg,neutral,Forward,center,0
+151,c20_face151.jpg,sad,Looking Right,center,1
+152,c20_face152.jpg,neutral,Forward,center,1
+153,c20_face153.jpg,neutral,Forward,center,1
+154,c20_face154.jpg,neutral,Forward,center,0
+155,c20_face155.jpg,,,,
+156,c20_face156.jpg,,,,
+157,c20_face157.jpg,,,,
+158,c20_face158.jpg,sad,Forward,closed,0
+159,c20_face159.jpg,neutral,Looking Up,,
+160,c20_face160.jpg,,,,
+161,c20_face161.jpg,sad,Looking Up,closed,0
+162,c20_face162.jpg,,,,
+163,c20_face163.jpg,neutral,Looking Up,,
+164,c20_face164.jpg,,,,
+165,c20_face165.jpg,sad,Forward,center,1
+166,c20_face166.jpg,neutral,Looking Up,,
+167,c20_face167.jpg,neutral,Looking Up,,
+168,c20_face168.jpg,,,,
+169,c20_face169.jpg,,,,
+170,c20_face170.jpg,neutral,Forward,center,1
+171,c20_face171.jpg,neutral,Forward,center,0
+172,c20_face172.jpg,neutral,Forward,closed,0
+173,c20_face173.jpg,neutral,Forward,closed,0
+174,c20_face174.jpg,,,,
+175,c20_face175.jpg,,,,
+176,c20_face176.jpg,,,,
+177,c20_face177.jpg,,,,
+178,c20_face178.jpg,,,,
+179,c20_face179.jpg,,,,
+180,c20_face180.jpg,,,,
+181,c20_face181.jpg,,,,
+182,c20_face182.jpg,,,,
+183,c20_face183.jpg,,,,
+184,c20_face184.jpg,neutral,Looking Up,,
+185,c20_face185.jpg,,,,
+186,c20_face186.jpg,,,,
+187,c20_face187.jpg,,,,
+188,c20_face188.jpg,,,,
+189,c20_face189.jpg,,,,
+190,c20_face190.jpg,,,,
+191,c20_face191.jpg,,,,
+192,c20_face192.jpg,neutral,Forward,center,1
+193,c20_face193.jpg,,,,
+194,c20_face194.jpg,neutral,Forward,closed,0
+195,c20_face195.jpg,,,,
+196,c20_face196.jpg,,,,
+197,c20_face197.jpg,,,,
+198,c20_face198.jpg,neutral,Looking Right,closed,0
+199,c20_face199.jpg,neutral,Looking Right,right,0
+200,c20_face200.jpg,neutral,Forward,closed,0
