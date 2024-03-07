@@ -1,35 +1,45 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import './Industry.css';
 
 export const Industry = () => {
   return (
-    <div>
-      <h1>Interview Perfect</h1>
-      <p>What field are you interested in?</p>
+    <div className='industry-container'>
+      <div className='industry'>
+      <h2>What field are you interested in?</h2>
       <form>
-        <label>
-          <input type="radio" name="field" value="SoftwareEngineering" />
-          Software Engineering
-        </label>
-        <br />
-        <label>
-          <input type="radio" name="field" value="CivilEngineering" />
-          Civil Engineering
-        </label>
-        <br />
-        <label>
-          <input type="radio" name="field" value="BusinessManagement" />
-          Business Management
-        </label>
-        <br />
-        <label>
-          <input type="radio" name="field" value="HRManagement" />
-          HR Management
-        </label>
-        <br />
-        <button type="submit">Review</button>
+      <button type="submit">
+        Software Enginnering
+        <span className="arrow">➔</span>
+        </button>
+
+        < hr />
+
+        <button type="submit">
+        Civil Engineering
+        <span className="arrow">➔</span>
+        </button>
+
+        < hr />
+
+        <button type="submit">
+        Business Management
+        <span className="arrow">➔</span>
+        </button>
+
+        < hr />
+      
+        <button type="submit">
+        HR Management
+        <span className="arrow">➔</span>
+        </button>
+
+        < hr />
+
       </form>
     </div>
+    </div>
+
   );
 };
 
