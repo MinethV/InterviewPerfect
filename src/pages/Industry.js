@@ -10,28 +10,28 @@ export const Industry = () => {
       <form>
       <button type="submit">
         Software Enginnering
-        <span className="arrow">➔</span>
+        <span className="arrow"></span>
         </button>
 
         < hr />
 
         <button type="submit">
         Civil Engineering
-        <span className="arrow">➔</span>
+        <span className="arrow"></span>
         </button>
 
         < hr />
 
         <button type="submit">
         Business Management
-        <span className="arrow">➔</span>
+        <span className="arrow"></span>
         </button>
 
         < hr />
       
         <button type="submit">
         HR Management
-        <span className="arrow">➔</span>
+        <span className="arrow"></span>
         </button>
 
         < hr />
