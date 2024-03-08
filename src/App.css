@@ -18,6 +18,8 @@
     background-color: #cbbcb1;
 }
 
+
+
 .mask-custom {
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, .15);
@@ -38,7 +40,8 @@
 }
 
 #IntImg1{
-    padding: 10vw 5vw 5vw 4vw;
+    padding-right: 4vw;
+    padding-top : 2vw;
 }
 .navLink{
     font-weight: 450;

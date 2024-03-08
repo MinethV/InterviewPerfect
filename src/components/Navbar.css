@@ -1,0 +1,11 @@
+.navbar .container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-collapse ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
