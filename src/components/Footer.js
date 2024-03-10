@@ -1,13 +1,17 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
-import { faTwitter, faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-
+import { FaTwitter, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 
 const Footer = () => {
   return (
     <footer className="footer bg-white text-dark mt-5" style={{ backgroundColor: "white" }}>
       <Container>
+      <Row>
+          <Col>
+            <hr className="bg-dark mb-4" />
+          </Col>
+        </Row>
         <Row>
           <Col md={4}>
             <h4 className="font-weight-light mb-4" style={{ color: "#B385FFF2" }}>COMPANY</h4>
@@ -38,29 +42,29 @@ const Footer = () => {
           </Col>
         </Row>
         <Row>
-          <Col className="text-center mb-4">
+          <Col className="text-left mb-4">
             <h4 className="font-weight-light" style={{ color: "#B385FFF2" }}>Follow Us on Social Media</h4>
           </Col>
         </Row>
         <Row>
           <Col md={3} className="mb-3 text-center">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter fa-2x"></i>
+              <FaTwitter size={32} />
             </a>
           </Col>
           <Col md={3} className="mb-3 text-center">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github fa-2x"></i>
+              <FaGithub size={32} />
             </a>
           </Col>
           <Col md={3} className="mb-3 text-center">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram fa-2x"></i>
+              <FaInstagram size={32} />
             </a>
           </Col>
           <Col md={3} className="mb-3 text-center">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin-in fa-2x"></i>
+              <FaLinkedinIn size={32} />
             </a>
           </Col>
         </Row>
@@ -71,7 +75,7 @@ const Footer = () => {
         </Row>
         <Row className="mt-5">
             <Col className="text-left ">
-                <p className="lead mb-0" style={{ fontSize: "18px" }}><i>&copy; 2020 Interview Perfect</i></p>
+                <p className="text-muted" style={{ fontSize: "18px" }}><i>&copy; 2020 Interview Perfect</i></p>
             </Col>
         </Row>
         
