@@ -1,13 +1,36 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 import { FaTwitter, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import './Footer.css'
+
 
 
 const Footer = () => {
   return (
     <footer className="footer bg-white text-dark mt-5" style={{ backgroundColor: "white" }}>
       <Container>
-      <Row>
+      <div className='footer-top'>
+                <div className="footer-top-left">
+                    <div className="footer-top-text">
+                    <img src={require('../images/logo.png')} alt="Logo" className="logo-img" style={{ width: '100px !important' }}/>
+                    </div>
+                    
+                </div>
+                <div className='footer-top-right'>
+        
+                  <div className='footer-input'>
+                    <input type="text" placeholder="Search here" className='input'/>
+                    <button className='subscribe-button'>Send</button>
+                  </div>    
+                    
+                </div>
+        </div>
+
+      
+
+      
+
+       <Row>
           <Col>
             <hr className="bg-dark mb-4" />
           </Col>
@@ -73,7 +96,7 @@ const Footer = () => {
             <hr className="bg-dark mb-4" />
           </Col>
         </Row>
-        <Row className="mt-5">
+        <Row className="mt-3">
             <Col className="text-left ">
                 <p className="text-muted" style={{ fontSize: "18px" }}><i>&copy; 2020 Interview Perfect</i></p>
             </Col>
