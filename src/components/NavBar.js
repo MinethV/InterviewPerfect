@@ -20,7 +20,7 @@ export default function NavBar() {
             <nav className="navbar navbar-expand-lg fixed-top navbar-light mask-custom shadow-0 ps-5" >
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src={logo} alt="" height="26"
+                        <img src={logo} alt="" height="6"
                              className="d-inline-block align-text-top"/>
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"

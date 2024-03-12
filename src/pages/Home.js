@@ -6,7 +6,6 @@ import './home.css';
 export const Home = () => {
     return (
         <>
-            <NavBar/>
             <div className="container-fluid">
                 <div className="row mb-5" >
                     <div className="col headingCol">
