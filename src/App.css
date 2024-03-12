@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Rubik', sans-serif;
+
 }
 
 /* Color of the links BEFORE scroll */
@@ -88,7 +89,8 @@ body {
     border-radius: 1rem;
 }
 
-.login {
+.login,
+.profile {
     /* The image used */
     background-image: url("./images/LoginBg.png");
     background-size: cover;
@@ -99,4 +101,9 @@ body {
     background-position: center center;
     Height: 100vh;
     Width: 100%;
+}
+
+.bi-person-circle {
+    font-size: 1.5rem;
+    color: black;
 }
