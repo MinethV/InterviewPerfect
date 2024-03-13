@@ -3,46 +3,44 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Centers vertically */
-  }
-  
-  .industry {
+}
+
+.industry {
     width: 50%;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     font-weight: 300;
-  
-    
+
+
     /* Add your existing styles for the industry component here */
-  }
+}
 
 
-  .industry h2 {
+.industry h2 {
     font-weight: 300;
     padding-bottom: 50px;
     text-align: center;
-  }
+}
 
-  .industry button {
+.industry button {
     align-items: center;
     background: none;
     border: none;
     font-weight: 300;
-  }
-  
-  .industry hr {
+}
+
+.industry hr {
     width: 100%;
     height: 1px;
     border: 0;
-    background: linear-gradient(to right, #00000000, #000000, #000000,  #00000000);
-  }
+    background: linear-gradient(to right, #00000000, #000000, #000000, #00000000);
+}
 
 
-
-  
-  .arrow {
+.arrow {
     float: right;
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-  }
+}
   

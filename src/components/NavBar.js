@@ -1,46 +1,48 @@
 import React from "react";
-import { useAuth0 } from '@auth0/auth0-react';
 import logo from '../images/logo.png';
-
-export const Loginbutton = () => {
-    const { loginWithRedirect, isAuthenticated } = useAuth0();
-
-    return (
-        !isAuthenticated && (
-            <button onClick={() => loginWithRedirect()} className="btn btn-primary">
-                Sign In
-            </button>
-        )
-    )
-}
+import {Link, useMatch, useResolvedPath} from "react-router-dom";
 
 export default function NavBar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg fixed-top navbar-light mask-custom shadow-0 ps-5" >
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
-                        <img src={logo} alt="" height="26"
-                             className="d-inline-block align-text-top"/>
-                    </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <a className="nav-link fs-5 navLink" href="#!">Review</a>
-                            </li>
-                            <li className="nav-item">
-                                <Loginbutton/>
-                            </li>
-                            <button type="button" className="btn btn-outline-primary">Get Started</button>
-                        </ul>
+            <div className="container-fluid">
+                <nav className="navbar navbar-expand-lg fixed-top navbar-light mask-custom shadow-0 ps-5">
+                    <div className="container-fluid">
+                        <Link className="navbar-brand" to="/">
+                            <img src={logo} alt="" height="26"
+                                 className="d-inline-block align-text-top"/>
+                        </Link>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul className="navbar-nav ms-auto">
+                                <CustomLink className="nav-link fs-5 navLink" to="/review">Review
+                                </CustomLink>
+                                <CustomLink className="nav-item nav-link fs-5 pe-3 navLink" to="/Login">Log
+                                    In </CustomLink>
+                                <button type="button" className="btn btn-outline-primary">Get Started</button>
+
+                                <CustomLink to='/Profile'><i className="bi bi-person-circle ms-3 "></i></CustomLink>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </>
     )
+
+    function CustomLink({to, children, ...props}) {
+        const resolvedPath = useResolvedPath(to);
+        const isActive = useMatch({path: resolvedPath.pathname, end: true})
+        return (
+            <li className={isActive ? "active" : ""}>
+                <Link to={to} {...props}>
+                    {children}
+                </Link>
+            </li>
+        )
+    }
 }
