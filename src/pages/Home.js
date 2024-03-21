@@ -7,14 +7,14 @@ export const Home = () => {
     return (
         <>
             <NavBar/>
-            <div className="container-fluid">
+            <div className="homecontainer container-fluid">
                 <div className="row mb-5" >
                     <div className="col headingCol">
                         <p className="lh-1 heading">Interview <br/> mastery, <br/> made easy.</p>
                         <p className="fs-5 fw-light">Never fear an interview again: Prepare <br/> 
                             for success with our comprehensive <br/>
                             and versatile interview simulator</p>
-                        <button type="button" className="btn btn-primary">Get Started</button>
+                        <button type="button" className="btn btn-primary">Start Practicing</button>
                     </div>
                     <div className="col homeImage">
                     <img src={HomeImg} className="img-fluid" id="IntImg1" alt=""/>
