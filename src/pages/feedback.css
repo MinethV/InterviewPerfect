@@ -1,0 +1,19 @@
+.congratulations {
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 700px;
+  }
+  
+  .congratulations h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #29ABCA;
+  }
+  
+  .congratulations p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  

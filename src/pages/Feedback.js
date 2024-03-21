@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from '../components/NavBar';
+import './feedback.css';
 
 const Feedback = () => {
     return (
@@ -14,9 +15,11 @@ const Feedback = () => {
             </div>
             <div>
                  <div className="container-bar">
-                    
+
                  </div>
+
+                 
             </div>
         </>
     )
-}
+} 
