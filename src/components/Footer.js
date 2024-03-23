@@ -23,7 +23,10 @@ const Footer = () => {
                     <div className="col-md-4">
                         <h4 className="font-weight-light mb-1" style={{color: "#B385FFF2"}}>COMPANY</h4>
                         <ul className="list-group footer-nav" style={{border: "none"}}>
-                            <li className="list-group-item text-muted" style={{border: "none"}}>About Us</li>
+                            <li className="list-group-item text-muted" style={{border: "none"}}>
+                                <a href="/about" style={{color: "inherit", textDecoration: "none"}}>About
+                                    Us</a>
+                            </li>
                             <li className="list-group-item text-muted" style={{border: "none"}}>Contact Us</li>
                         </ul>
                     </div>

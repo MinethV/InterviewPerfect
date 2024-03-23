@@ -1,6 +1,7 @@
 import React from "react";
 import {useAuth0} from '@auth0/auth0-react';
 import logo from '../images/logo.png';
+import {Link} from "react-router-dom";
 
 export const Loginbutton = () => {
     const {loginWithRedirect, isAuthenticated} = useAuth0();
@@ -20,8 +21,9 @@ export default function NavBar() {
             <nav className="navbar navbar-expand-lg fixed-top navbar-light mask-custom shadow-0 ps-5">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src={logo} alt="" height="26"
-                             className="d-inline-block align-text-top"/>
+                        <Link to="/">
+                            <img src={logo} alt="" height="26" className="d-inline-block align-text-top"/>
+                        </Link>
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
