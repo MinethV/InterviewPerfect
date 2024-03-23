@@ -1,13 +1,13 @@
 import React from "react";
-import { useAuth0 } from '@auth0/auth0-react';
+import {useAuth0} from '@auth0/auth0-react';
 import logo from '../images/logo.png';
 
 export const Loginbutton = () => {
-    const { loginWithRedirect, isAuthenticated } = useAuth0();
+    const {loginWithRedirect, isAuthenticated} = useAuth0();
 
     return (
         !isAuthenticated && (
-            <button onClick={() => loginWithRedirect()} className="btn btn-primary">
+            <button onClick={() => loginWithRedirect()} className="btn btn-primary p-3">
                 Sign In
             </button>
         )
@@ -17,7 +17,7 @@ export const Loginbutton = () => {
 export default function NavBar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg fixed-top navbar-light mask-custom shadow-0 ps-5" >
+            <nav className="navbar navbar-expand-lg fixed-top navbar-light mask-custom shadow-0 ps-5">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="" height="26"
@@ -30,10 +30,7 @@ export default function NavBar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <a className="nav-link fs-5 navLink" href="#!">Review</a>
-                            </li>
-                            <li className="nav-item">
+                            <li className="nav-item me-1">
                                 <Loginbutton/>
                             </li>
                             <button type="button" className="btn btn-outline-primary">Get Started</button>
