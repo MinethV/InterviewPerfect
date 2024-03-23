@@ -8,7 +8,7 @@ export const Profile = () => {
                 <div className="card p-4">
                     <div className=" image d-flex flex-column justify-content-center align-items-center">
                         <button className="btn btn-secondary">
-                            <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100"/>
+                            <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" alt="profileIcon"/>
                         </button>
                         <span className="name mt-3">Eleanor Pena</span>
                         <div className="d-flex flex-row justify-content-center align-items-center gap-2">
