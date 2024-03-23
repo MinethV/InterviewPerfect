@@ -15,7 +15,6 @@ const Feedback = () => {
             </div>
             <div>
                  <div className="container-bar">
-
                  </div>
 
                  
