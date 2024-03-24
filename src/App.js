@@ -3,7 +3,8 @@ import NavBar from './components/NavBar';
 import { Home } from './pages/Home';  //importing Home page from pages
 import { Industry } from './pages/Industry';  //importing Home page from pages
 import { QuestionAsk } from './pages/questionAsk';
-import { Answer } from './pages/Answer'
+import { Answer } from './pages/Answer';
+import { Feedback } from './pages/feedback';
 // import { Review } from './pages/Review';  //importing Home page from pages
 import { Route, Routes } from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/industry" element={<Industry/>}/>
                 <Route path="/askquestions" element={<QuestionAsk/>}/>
                 <Route path="/answer" element={<Answer/>}/>
+                <Route path="/feedback" element={<Feedback/>}/>
                 
               
             </Routes>
