@@ -210,3 +210,47 @@ ul.team-icon li {
 /*    margin-top: 500px;*/
 /*}*/
 
+@media only screen and (max-width: 480px) {
+    .team-item {
+      margin: 20px;
+      padding: 40px 40px;
+    }
+  
+    .team-img {
+      max-width: 150px;
+    }
+  
+    .team-info {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .team-item {
+      margin: 40px 40px;
+      padding: 60px 60px;
+    }
+  
+    .team-img {
+      max-width: 200px;
+    }
+  
+    .team-info {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .team-item {
+      margin: 60px 70px;
+      padding: 80px 80px;
+    }
+
+    .team-img {
+        max-width: 250px;
+      }
+    
+      .team-info {
+        margin-bottom: 20px;
+      }
+}
