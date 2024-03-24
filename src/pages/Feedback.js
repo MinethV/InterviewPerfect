@@ -5,7 +5,7 @@ import Confidence_level from "../components/Confidence_level";
 import Filler_words from "../components/Filler_words";
 import Time_spent from "../components/Time_spent";
 
-const Feedback = (askedQuestions) => {
+const Feedback = ({askedQuestions}) => {
     return (
         <>
             <NavBar/>
@@ -35,9 +35,10 @@ const Feedback = (askedQuestions) => {
                         ))}
                     </ul>
                 </div>
-
+                
             </div>
             
         </>
     )
 } 
+export default Feedback;
