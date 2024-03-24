@@ -1,7 +1,20 @@
 import React from "react";
 import NavBar from '../components/NavBar';
 import HomeImg from '../images/recruite.png';
+import { useAuth0 } from '@auth0/auth0-react';
 import './home.css';
+
+export const Loginbutton = () => {
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
+
+    return (
+        !isAuthenticated && (
+            <button href="#" onClick={() => loginWithRedirect()} className="btn btn-primary">
+                Start Practising
+            </button>
+        )
+    )
+}
 
 export const Home = () => {
     return (
@@ -14,7 +27,7 @@ export const Home = () => {
                         <p className="fs-5 fw-light">Never fear an interview again: Prepare <br/> 
                             for success with our comprehensive <br/>
                             and versatile interview simulator</p>
-                        <button type="button" className="btn btn-primary">Start Practicing</button>
+                            <Loginbutton/>
                     </div>
                     <div className="col homeImage">
                     <img src={HomeImg} className="img-fluid" id="IntImg1" alt=""/>
