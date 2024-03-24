@@ -1,13 +1,13 @@
+// QuestionAsk.js
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import './questionAsk.css';
 
-// Main QuestionAsk component
 export const QuestionAsk = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [videoFinished, setVideoFinished] = useState(false);
-  const [askedQuestions, setAskedQuestions] = useState([]); // for saving asked questions
+  const [askedQuestions, setAskedQuestions] = useState([]); // Array to store asked questions
   const { industry } = useParams();
   const videoRef = useRef(null);
 
@@ -34,14 +34,12 @@ export const QuestionAsk = () => {
       video.load(); // Reset the video element
       video.play(); // Start playing the video
 
-      // Add event listener for video ended event
       const handleVideoEnded = () => {
         setVideoFinished(true); // Set videoFinished to true when the video ends
       };
 
       video.addEventListener('ended', handleVideoEnded);
 
-      // Cleanup: remove event listener
       return () => {
         video.removeEventListener('ended', handleVideoEnded);
       };
@@ -51,7 +49,7 @@ export const QuestionAsk = () => {
   const handleContinue = () => {
     setVideoFinished(false); // Reset videoFinished when continue button is clicked
     const nextQuestion = questions[currentQuestionIndex];
-    setAskedQuestions(prevState => [...prevState, nextQuestion]); // Add current question to askedQuestions array
+    setAskedQuestions(prevState => [...prevState, nextQuestion.question]); // Add current question to askedQuestions array
     setCurrentQuestionIndex((currentQuestionIndex + 1) % questions.length); // Move to the next question
   };
 
@@ -69,7 +67,6 @@ export const QuestionAsk = () => {
             {videoFinished ? (
               <div>
                 <p>Answer the question:</p>
-                {/* Add input field for user's answer */}
                 <button onClick={handleContinue} className="btn btn-primary">Continue</button>
               </div>
             ) : (
