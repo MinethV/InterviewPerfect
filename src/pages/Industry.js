@@ -14,14 +14,14 @@ export const Industry = () => {
           </button>
         </Link>
         <hr />
-        <Link to="/askquestions/civilengineering">
+        <Link to="/askquestions">
           <button type="button">
             Civil Engineering
             <span className="arrow"></span>
           </button>
         </Link>
         <hr />
-        <Link to="/askquestions/businessmanagement">
+        <Link to="/askquestions">
           <button type="button">
             Business Management
             <span className="arrow"></span>
