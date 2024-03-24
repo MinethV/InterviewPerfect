@@ -1,9 +1,20 @@
 import React from "react";
-import NavBar from '../components/NavBar';
 import HomeImg from '../images/recruite.png';
 import '../Stylesheets/home.css';
+import {useNavigate} from "react-router-dom";
+import {useAuth0} from "@auth0/auth0-react";
 
 export const Home = () => {
+    const navigate = useNavigate();
+    const {isAuthenticated, loginWithRedirect} = useAuth0();
+    const handleVisit = () => {
+        if (!isAuthenticated) {
+            loginWithRedirect();
+        } else {
+            navigate('/industry');
+        }
+    };
+
     return (
         <>
             <div className="container-fluid homeContainer">
@@ -13,13 +24,12 @@ export const Home = () => {
                         <p className="fs-5 fw-light">Never fear an interview again: Prepare <br/>
                             for success with our comprehensive <br/>
                             and versatile interview simulator</p>
-                        <button type="button" className="btn btn-primary">Get Started</button>
+                        <button type="button" className="btn btn-primary" onClick={handleVisit}>Get Started</button>
                     </div>
                     <div className="col homeImage">
                         <img src={HomeImg} className="img-fluid" id="IntImg1" alt=""/>
                     </div>
                 </div>
-
             </div>
         </>
     )
