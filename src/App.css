@@ -58,13 +58,12 @@ body {
 
 
 .team-item {
-    display: inherit;
+    display: inline-block;
     backdrop-filter: blur(50px);
     background-color: rgba(190, 190, 190, 0.15);
-
     text-align: center;
     margin: 60px 70px;
-    padding: 70px 100px;
+    padding: 80px 80px;
     border-radius: 10px 10px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
