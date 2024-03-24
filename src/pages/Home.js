@@ -6,7 +6,7 @@ import '../Stylesheets/home.css';
 export const Home = () => {
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid homeContainer">
                 <div className="row mb-5">
                     <div className="col headingCol">
                         <p className="lh-1 heading">Interview <br/> mastery, <br/> made easy.</p>
@@ -19,7 +19,7 @@ export const Home = () => {
                         <img src={HomeImg} className="img-fluid" id="IntImg1" alt=""/>
                     </div>
                 </div>
-                
+
             </div>
         </>
     )
