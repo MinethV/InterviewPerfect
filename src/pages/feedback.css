@@ -1,0 +1,53 @@
+.congratulations {
+  padding-top: 5%;
+    text-align: center;
+    margin: 5rem auto;
+
+    max-width: 60%;
+  }
+  
+  .congratulations h1 {
+    font-size: 36PX;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .congratulations p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    color: #333;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  hr {
+
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background: linear-gradient(to right, #00000000, #000000, #000000,  #00000000);
+
+  }
+  .card-box {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between; /* You can adjust this to space-evenly or other values */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if the container is not wide enough */
+}
+
+.cards-container > * {
+    flex-basis: calc(33.33% - 20px); /* Adjust the width of each card here */
+    margin-bottom: 20px; /* Adjust the space between cards vertically */
+}
+
+  
