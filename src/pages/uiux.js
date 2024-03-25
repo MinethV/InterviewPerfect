@@ -10,11 +10,13 @@ export const UIUX = () => {
   const { industry } = useParams();
   const videoRef = useRef(null);
   const cameraRef = useRef(null);
+  const audioChunksRef = useRef([]);
   const [confidence, setConfidence] = useState(null);
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const history = useNavigate(); // Initialize useHistory hook
+  const maxQuestions = 10; // Maximum number of questions
 
   useEffect(() => {
-    const fetchQuestions = async () => {
+    const fetchQuestions = async (industry) => {
       try {
         const response = await fetch(`https://interviewperfect-error-x.koyeb.app/modelvideos/uiuxengineering`);
         if (!response.ok) {
@@ -24,9 +26,9 @@ export const UIUX = () => {
         const allQuestions = data.modelVideos;
 
         // Filter situational questions
-        const situationalQuestions = allQuestions.filter(question => question.question_type === "Situational").slice(0, 6);
+        const situationalQuestions = allQuestions.filter(question => question.question_type === "Situational").slice(0, 4);
         // Filter technical questions
-        const technicalQuestions = allQuestions.filter(question => question.question_type === "Technical").slice(0, 4);
+        const technicalQuestions = allQuestions.filter(question => question.question_type === "Technical").slice(0, 6);
 
         // Concatenate the filtered arrays
         let concatenatedQuestions = [...situationalQuestions, ...technicalQuestions];
@@ -43,6 +45,15 @@ export const UIUX = () => {
 
     fetchQuestions();
   }, []);
+
+  // Function to shuffle an array
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
 
   useEffect(() => {
     if (questions.length > 0) {
@@ -64,23 +75,17 @@ export const UIUX = () => {
     }
   }, [currentQuestionIndex, questions]);
 
-  const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  };
-
   const handleContinue = () => {
     setVideoFinished(false); // Reset videoFinished when continue button is clicked
     const nextQuestion = questions[currentQuestionIndex];
     setAskedQuestions(prevState => [...prevState, nextQuestion.question]); // Add current question to askedQuestions array
-    setCurrentQuestionIndex((currentQuestionIndex + 1) % questions.length); // Move to the next question
 
-    // Check if the user has answered 10 questions
-    if ((currentQuestionIndex + 1) === 10) {
-      handleFeedback(); // Navigate to feedback page
+    if (currentQuestionIndex === maxQuestions - 1) {
+      handleFeedback(); // Navigate to feedback page if it's the last question
+    } else if (currentQuestionIndex === maxQuestions / 2 - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1); // Move to the next question
+    } else {
+      setCurrentQuestionIndex((currentQuestionIndex + 1) % questions.length); // Move to the next question
     }
   };
 
@@ -96,13 +101,7 @@ export const UIUX = () => {
 
   const predictConfidence = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/predict`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ image: captureImage() }),
-      });
+      const response = await fetch(`http://localhost:8000/predict/${captureImage}`);
       if (!response.ok) {
         throw new Error('Failed to predict confidence level');
       }
@@ -114,50 +113,90 @@ export const UIUX = () => {
   };
 
   const startCamera = () => {
-    navigator.mediaDevices.getUserMedia({ video: { width: { min: 1280 }, height: { min: 720 } } })
+    navigator.mediaDevices.getUserMedia({ video: { width: { min: 1280 }, height: { min: 720 } }, audio: true }) // Enable audio
       .then((stream) => {
         cameraRef.current.srcObject = stream;
         cameraRef.current.play();
+
+        const mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.ondataavailable = (e) => {
+          if (e.data.size > 0) {
+            audioChunksRef.current.push(e.data);
+          }
+        };
+
+        mediaRecorder.onstop = () => {
+          const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/wav' });
+          const audioUrl = URL.createObjectURL(audioBlob);
+          // Now you have the audio as a blob, you can send it to the speech-to-text service
+          convertAudioToText(audioBlob);
+        };
+
+        // Start recording audio
+        mediaRecorder.start();
       })
       .catch((error) => {
         console.error('Error accessing camera:', error);
       });
   };
 
-  const handleFeedback = () => {
-    navigate('/feedback', { state: { questions } }); // Navigate to feedback page with questions data as state
+  const convertAudioToText = async (audioBlob) => {
+    const audioFormData = new FormData();
+    audioFormData.append('audio', audioBlob);
+
+    try {
+      const response = await fetch(`http://localhost:8000/predict/${audioFormData}`);
+      if (!response.ok) {
+        throw new Error('Failed to convert audio to text');
+      }
+      const data = await response.json();
+      console.log('Transcribed text:', data.transcription);
+      // Now you have the transcribed text, you can analyze it for filler words and keywords
+    } catch (error) {
+      console.error('Error converting audio to text:', error);
+    }
   };
 
-  return (
-    <div>
-      {questions.length > 0 && (
-        <div className="container d-flex justify-content-center align-items-center">
-          <div>
-            <p style={{ fontWeight: "300", fontSize: 20, fontFamily: "'Rubik', sans-serif", color: "#494949" }}>
-              Question {currentQuestionIndex + 1}
-            </p>
-            <p style={{ fontWeight: "300", fontSize: 30, fontFamily: "'Rubik', sans-serif" }}>
-              {questions[currentQuestionIndex].question}
-            </p>
-            {videoFinished ? (
-              <div>
-                <p>Answer the question:</p>
-                <video ref={cameraRef} autoPlay style={{ width: "80%" }}></video>
-                <br />
-                <button onClick={handleContinue} className="btn btn-primary">Continue</button>
-                <button onClick={handleFeedback} className="btn btn-primary">Feedback</button> {/* Add Feedback button */}
-              </div>
-            ) : (
-              <video ref={videoRef} autoPlay style={{ width: "100%" }}>
-                <source src={questions[currentQuestionIndex].firebase_download_url} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            )}
-          </div>
-        </div>
-      )}
-      {questions.length === 0 && <p>Loading...</p>}
-    </div>
-  );
+  const handleFeedback = () => {
+    history('/feedback', { state: { askedQuestions: askedQuestions } });
+// Navigate to feedback page with askedQuestions array as state
 };
+
+return (
+  <div>
+    {questions.length > 0 && (
+      <div className="container d-flex justify-content-center align-items-center">
+        <div>
+          <p style={{ fontWeight: "300", fontSize: 20, fontFamily: "'Rubik', sans-serif", color: "#494949" }}>
+            Question {currentQuestionIndex + 1}
+          </p>
+          <p style={{ fontWeight: "300", fontSize: 30, fontFamily: "'Rubik', sans-serif" }}>
+            {questions[currentQuestionIndex].question}
+          </p>
+          {videoFinished ? (
+            <div>
+              <p>Answer the question:</p>
+              <video ref={cameraRef} autoPlay style={{ width: "80%" }}></video>
+              <br />
+              {currentQuestionIndex === maxQuestions - 1 ? (
+                <button onClick={handleFeedback} className="btn btn-primary">End the Simulator</button>
+              ) : (
+                <button onClick={handleContinue} className="btn btn-primary">Continue</button>
+              )}
+            </div>
+          ) : (
+            <video ref={videoRef} autoPlay style={{ width: "100%" }}>
+              <source src={questions[currentQuestionIndex].firebase_download_url} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
+        </div>
+      </div>
+    )}
+    {questions.length === 0 && <p>Loading...</p>}
+  </div>
+);
+};
+
+
 
