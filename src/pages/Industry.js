@@ -7,28 +7,28 @@ export const Industry = () => {
     <div className='industry-container'>
       <div className='industry'>
         <h2>What field are you interested in?</h2>
-        <Link to="/askquestions">
+        <Link to="/softwareengineering">
           <button type="button">
             Software Engineering
             <span className="arrow"></span>
           </button>
         </Link>
         <hr />
-        <Link to="/askquestions">
+        <Link to="/civilengineering">
           <button type="button">
             Civil Engineering
             <span className="arrow"></span>
           </button>
         </Link>
         <hr />
-        <Link to="/askquestions">
+        <Link to="/uiux">
           <button type="button">
-            Business Management
+            UI / UX            
             <span className="arrow"></span>
           </button>
         </Link>
         <hr />
-        <Link to="/askquestions">
+        <Link to="/humanresources">
           <button type="button">
             HR Management
             <span className="arrow"></span>
