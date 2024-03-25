@@ -1,0 +1,22 @@
+.container  {
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  
+}
+.container > div {
+    text-align: center;
+    width: 80%;
+  }
+
+.container video {
+    border-radius: 20px;
+    align-items: center;
+}
+
+
+
+  
+
+  
