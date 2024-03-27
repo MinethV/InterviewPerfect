@@ -27,23 +27,20 @@
     font-size: 1.75rem;
     letter-spacing: 3px;
 }
-
-.headingCol {
+.headingCol{
     padding-top: 9vw;
     padding-left: 9vw;
 }
-
-.heading {
+.heading{
     font-weight: bold;
     font-size: 4vw;
     color: #070748;
 }
 
-#IntImg1 {
+#IntImg1{
     padding: 10vw 5vw 5vw 4vw;
 }
-
-.navLink {
+.navLink{
     font-weight: 450;
 }
 
@@ -57,200 +54,3 @@ body {
 }
 
 
-.team-item {
-    display: inline-block;
-    backdrop-filter: blur(50px);
-    background-color: rgba(190, 190, 190, 0.15);
-    text-align: center;
-    margin: 60px 70px;
-    padding: 80px 80px;
-    border-radius: 10px 10px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-.team-item:hover {
-    background: #ffffff;
-
-    color: white;
-}
-
-.team-item h3 {
-    margin: 20px 0px 0 !important;
-    color: #000000;
-    font-size: 18px;
-    font-family: 'rubic', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-.section-title {
-    text-align: center;
-    /*margin: ;*/
-
-}
-
-.section-first {
-    margin-top: 15vh;
-}
-
-.section-subtitle {
-    white-space: pre-line;
-    text-align: center;
-    /*margin: middle;*/
-    color: rgb(102, 102, 102);
-
-}
-
-.team-item:hover h3 {
-    color: rgb(75, 75, 75);
-}
-
-.team-info {
-    display: inline;
-    margin-bottom: 0;
-}
-
-.team-info p {
-    color: #7e7e7e;
-    font-style: italic;
-}
-
-.team-info:hover p {
-    color: rgb(100, 100, 100);
-}
-
-.team-info::after {
-    background: #008aff;
-    background: -webkit-linear-gradient(
-            135deg, #6B02FF 0%, #985BEF 100%
-    );
-    background: -o-linear-gradient(
-            135deg, #6B02FF 0%, #985BEF 100%
-    );
-    background: -moz-linear-gradient(
-            135deg, #6B02FF 0%, #985BEF 100%
-    );
-    background: linear-gradient(
-            135deg, #6B02FF 0%, #985BEF 100%
-    );
-    display: inline-block;
-    content: '';
-    width: 50px;
-    height: 3px;
-    margin-top: -20px;
-}
-
-.team-img {
-    display: inline-block;
-    max-width: 200px;
-    padding: 6px 6px;
-    background-color: #dedede;
-
-    border-radius: 50%;
-}
-
-ul.team-icon {
-    margin-top: 20px;
-    padding: 10px;
-    align-items: center;
-}
-
-ul.team-icon li {
-    display: inline-grid;
-    margin: 5px;
-
-}
-
-
-.giticon {
-    margin: 5px;
-    display: inline-block;
-    padding: 8px 8px;
-    width: 34px;
-    height: 34px;
-    font-size: 18px;
-    line-height: 18px;
-    background-color: rgb(194, 194, 194);
-    border-radius: 50%;
-    color: rgb(122, 122, 122);
-
-}
-
-.linkicon {
-    margin: 5px;
-    display: inline-block;
-    padding: 8px 8px;
-    width: 34px;
-    height: 34px;
-    font-size: 18px;
-    line-height: 18px;
-    background-color: rgb(194, 194, 194);
-    border-radius: 50%;
-    color: #fff;
-}
-
-.team-img-1 {
-    display: inline-block;
-    max-width: 200px;
-    padding: 6px 6px;
-    background-color: #dedede;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
-/*.footer-container {*/
-/*    margin-top: 500px;*/
-/*}*/
-
-@media only screen and (max-width: 480px) {
-    .team-item {
-      margin: 20px;
-      padding: 40px 40px;
-    }
-  
-    .team-img {
-      max-width: 150px;
-    }
-  
-    .team-info {
-      margin-bottom: 10px;
-    }
-  }
-  
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .team-item {
-      margin: 40px 40px;
-      padding: 60px 60px;
-    }
-  
-    .team-img {
-      max-width: 200px;
-    }
-  
-    .team-info {
-      margin-bottom: 15px;
-    }
-  }
-  
-  @media only screen and (min-width: 769px) {
-    .team-item {
-      margin: 60px 70px;
-      padding: 80px 80px;
-    }
-
-    .team-img {
-        max-width: 250px;
-      }
-    
-      .team-info {
-        margin-bottom: 20px;
-      }
-}
