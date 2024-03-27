@@ -23,7 +23,7 @@ export default function AboutUs() {
                             <p className="section-subtitle">{message}
                             </p>
                         </div>
-                        <div className="">
+                        <div className="col-sm-6 col-md-4">
                             <div className="team-item">
                                 <img src={mineth} className="team-img" alt="pic"/>
                                 <h3>Mineth Vismitha.</h3>
@@ -98,7 +98,7 @@ export default function AboutUs() {
                             </div>
                         </div>
 
-                        <div className="col-sm-6 col-md-4">
+                        <div className="col-sm-6 col-md-4" >
                             <div className="team-item">
                                 <img src={oneli} className="team-img-1" alt="pic"/>
                                 <h3>Oneli Karunaratne.</h3>
@@ -123,7 +123,7 @@ export default function AboutUs() {
                             </div>
                         </div>
 
-                        <div className="col-sm-6 col-md-4">
+                        <div className="col-sm-6 col-md-4"  >
                             <div className="team-item">
                                 <img src={sithuli} className="team-img" alt="pic"/>
                                 <h3>Sithuli Malwana.</h3>
