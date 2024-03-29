@@ -10,10 +10,17 @@ export const Feedback = () => {
   // Calculate overall filler percentage
   const overallFillerPercentage = fillerPercentages.reduce((acc, curr) => acc + curr, 0) / fillerPercentages.length;
 
+  // Convert confidence levels to percentages
+  const confidenceLevelsPercentages = confidenceLevels.map(level => level * 100);
+
   // Calculate overall confidence level
   let overallConfidenceLevel = 0; // Initialize overall confidence level
-  if (confidenceLevels && confidenceLevels.length > 0) {
-    overallConfidenceLevel = confidenceLevels.reduce((acc, curr) => acc + curr, 0) / confidenceLevels.length;
+  if (confidenceLevelsPercentages && confidenceLevelsPercentages.length > 0) {
+    // Filter out NaN values before calculating the average
+    const validConfidenceLevels = confidenceLevelsPercentages.filter(level => !isNaN(level));
+    if (validConfidenceLevels.length > 0) {
+      overallConfidenceLevel = validConfidenceLevels.reduce((acc, curr) => acc + curr, 0) / validConfidenceLevels.length;
+    }
   }
 
   return (
@@ -26,14 +33,14 @@ export const Feedback = () => {
 
       {/* Display confidence level in the first column */}
       <div className='row m-5'>
-      <div className='col bg-light mx-3 p-5 rounded'>
-        <h3>Facial Confidence Level</h3>
-        <br />
-        <div style={{ position: 'relative' }}>
-          <Circle percent={overallConfidenceLevel} strokeWidth={10} strokeColor="#3FC7FA" trailWidth={10} trailColor='#D9D9D9' />
-          <p className='text-center fs-2' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', margin: 0 }}>{isNaN(overallConfidenceLevel) ? 'N/A' : `${overallConfidenceLevel.toFixed(2)}%`}</p>
+        <div className='col bg-light mx-3 p-5 rounded'>
+          <h3>Facial Confidence Level</h3>
+          <br />
+          <div style={{ position: 'relative' }}>
+            <Circle percent={overallConfidenceLevel} strokeWidth={10} strokeColor="#3FC7FA" trailWidth={10} trailColor='#D9D9D9' />
+            <p className='text-center fs-2' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', margin: 0 }}>{confidenceLevelsPercentages.length > 0 ? `${overallConfidenceLevel.toFixed(2)}%` : 'N/A'}</p>
+          </div>
         </div>
-      </div>
 
         {/* Display filler words in the remaining columns */}
         <div className='col bg-light mx-3 p-5 rounded'>
