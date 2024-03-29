@@ -294,3 +294,5 @@ export const CivilEngineering = () => {
     </div>
   );
 };
+
+export default CivilEngineering;
