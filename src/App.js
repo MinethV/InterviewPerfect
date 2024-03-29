@@ -8,9 +8,6 @@ import { UIUX } from './pages/uiux';
 import { HumanResources } from './pages/humanresources';
 import { Feedback } from './pages/Feedback';
 import { useState } from 'react'; // Import useState hook
-import Cameratest from './pages/camertest';
-import FillerPercentagePage from './pages/fillerpercentage';
-import { SpeechToText } from './pages/sppechtest';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -28,10 +25,7 @@ function App() {
                 <Route path="/softwareengineering" element={<SoftwareEngineering/>}/>
                 <Route path="/civilengineering" element={<CivilEngineering/>}/>
                 <Route path="/uiux" element={<UIUX/>}/>
-                <Route path="/cameratest" element={<Cameratest/>}/>
-                <Route path="/speechtest" element={<SpeechToText/>}/>
-                <Route path="/fillerpercentage" element={<FillerPercentagePage/>}/>
-                <Route path="/humanresources" element={<HumanResources setAskedQuestions={setAskedQuestions} />}/> {/* Pass setAskedQuestions as prop */}
+                <Route path="/humanresources" element={<HumanResources/>}/> {/* Pass setAskedQuestions as prop */}
             </Routes>
         </>
     )
