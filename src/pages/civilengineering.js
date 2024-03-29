@@ -295,4 +295,4 @@ export const CivilEngineering = () => {
   );
 };
 
-export default HumanResources;
+
