@@ -2,7 +2,7 @@ import React from "react";
 import logo from '../images/logo.png';
 import {Link, useMatch, useResolvedPath} from "react-router-dom";
 import {LogoutButton} from "./Logoutbutton";
-import {LoginButton} from "./LoginButton";
+import { Loginbutton } from "./Loginbutton";
 import {useAuth0} from "@auth0/auth0-react";
 
 export default function NavBar() {
