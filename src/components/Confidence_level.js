@@ -17,7 +17,7 @@ export function Confidence_level({ title, body }) {
         </div>
 
         <div className='image-container'>
-            <Circle percent={77} strokeWidth={5} strokeColor="#edb933" trailWidth={4} trailColor='#808080' />
+            <Circle percent={77} strokeWidth={10} strokeColor="#edb933" trailWidth={10} trailColor='#808080' />
         </div>  
     </div>
   );
