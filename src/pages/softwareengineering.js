@@ -295,6 +295,6 @@ export const SoftwareEngineering = () => {
   );
 };
 
-export default HumanResources;
+
 
 
