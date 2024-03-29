@@ -8,11 +8,14 @@ import { UIUX } from './pages/uiux';
 import { HumanResources } from './pages/humanresources';
 import { Feedback } from './pages/Feedback';
 import { useState } from 'react'; // Import useState hook
-
+import Cameratest from './pages/camertest';
+import FillerPercentagePage from './pages/fillerpercentage';
+import { SpeechToText } from './pages/sppechtest';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
     const [askedQuestions, setAskedQuestions] = useState([]); // Define state for askedQuestions
+    const [fillerPercentage, setFillerPercentage] = useState(null); 
 
     return(
         <>
@@ -21,10 +24,13 @@ function App() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/review" element={<Home/>}/>
                 <Route path="/industry" element={<Industry/>}/>
-                <Route path="/feedback" element={<Feedback askedQuestions={askedQuestions} />}/> {/* Pass askedQuestions as prop */}
+                <Route path="/feedback" element={<Feedback />} />
                 <Route path="/softwareengineering" element={<SoftwareEngineering/>}/>
                 <Route path="/civilengineering" element={<CivilEngineering/>}/>
                 <Route path="/uiux" element={<UIUX/>}/>
+                <Route path="/cameratest" element={<Cameratest/>}/>
+                <Route path="/speechtest" element={<SpeechToText/>}/>
+                <Route path="/fillerpercentage" element={<FillerPercentagePage/>}/>
                 <Route path="/humanresources" element={<HumanResources setAskedQuestions={setAskedQuestions} />}/> {/* Pass setAskedQuestions as prop */}
             </Routes>
         </>
