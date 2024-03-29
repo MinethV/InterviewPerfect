@@ -295,4 +295,3 @@ export const CivilEngineering = () => {
   );
 };
 
-export default CivilEngineering;
