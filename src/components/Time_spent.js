@@ -17,7 +17,7 @@ export  function Time_spent({ title, body }) { // Destructure props here
         </div>
 
         <div className='image-container'>
-            <Circle percent={77} strokeWidth={5} strokeColor="#86f984" trailWidth={4} trailColor='#808080' />
+            <Circle percent={77} strokeWidth={10} strokeColor="#86f984" trailWidth={10} trailColor='#808080' />
         </div>  
     </div>
   );
