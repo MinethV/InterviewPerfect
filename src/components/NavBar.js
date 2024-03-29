@@ -2,7 +2,7 @@ import React from "react";
 import logo from '../images/logo.png';
 import {Link, useMatch, useResolvedPath} from "react-router-dom";
 import { LogoutButton } from "./Logoutbutton"
-import { Loginbutton } from "./Loginbutton";
+import { LoginButton } from "./Loginbutton";
 import {useAuth0} from "@auth0/auth0-react";
 
 export default function NavBar() {
@@ -24,7 +24,7 @@ export default function NavBar() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul className="navbar-nav ms-auto">
-                                {!isAuthenticated && <Loginbutton/>}
+                                {!isAuthenticated && <LoginButton/>}
                                 {isAuthenticated && <LogoutButton/>}
                                 {isAuthenticated &&
                                     <CustomLink className="ms-2 btn btn-primary" to="/profile">Profile</CustomLink>}
