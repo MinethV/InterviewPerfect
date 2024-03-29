@@ -1,6 +1,6 @@
 import React from "react";
 import HomeImg from '../images/recruite.png';
-import './home.css';
+import '../Stylesheets/home.css';
 import {useNavigate} from "react-router-dom";
 import {useAuth0} from "@auth0/auth0-react";
 
@@ -39,11 +39,10 @@ export const Home = () => {
             <div className="container-fluid homeContainer">
                 <div className={`row mb-5 ${isMobile ? "flex-column" : ""}`}>
                     <div className={`col headingCol ${isMobile ? "order-2" : ""}`}>
-                        <p className="lh-1 heading">Interview mastery, made easy.</p>
-                        <p className="fs-5 fw-light">
-                            Never fear an interview again: Prepare for success with our
-                            comprehensive and versatile interview simulator
-                        </p>
+                    <p className="lh-1 heading">Interview <br/> mastery, <br/> made easy.</p>
+                        <p className="fs-5 fw-light">Never fear an interview again: Prepare <br/> 
+                            for success with our comprehensive <br/>
+                            and versatile interview simulator</p>
                         <button type="button" className="btn btn-primary" onClick={handleVisit}>
                             Get Started
                         </button>
