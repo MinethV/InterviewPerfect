@@ -1,6 +1,6 @@
 import React from "react";
 import HomeImg from '../images/recruite.png';
-import '../Stylesheets/home.css';
+import './home.css';
 import {useNavigate} from "react-router-dom";
 import {useAuth0} from "@auth0/auth0-react";
 
