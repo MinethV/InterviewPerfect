@@ -125,7 +125,7 @@ export const HumanResources = () => {
       const fillerPercentage = data.filler_percentage;
       
       // Update filler percentages array
-      setFillerPercentages(prevState => [...      prevState, fillerPercentage]);
+      setFillerPercentages(prevState => [...prevState, fillerPercentage]);
       setFillerPercentage(fillerPercentage); // Update overall filler percentage
       setOverallFillerCount(prevCount => prevCount + fillerCount);
       console.log('Transcribed text sent successfully');
@@ -159,6 +159,14 @@ export const HumanResources = () => {
       };
     }
   }, [currentQuestionIndex, questions]);
+
+  useEffect(() => {
+    if (videoFinished) {
+      startRecording(); // Start recording when video finishes playing
+    } else {
+      stopRecording(); // Stop recording when video starts playing again
+    }
+  }, [videoFinished]);
 
   const handleContinue = () => {
     stopRecording(); // Stop recording before continuing
@@ -217,8 +225,12 @@ export const HumanResources = () => {
           throw new Error('Failed to detect facial confidence');
         }
         const data = await response.json();
+        
         // Update confidence levels state with the received data
         setConfidenceLevels(prevState => [...prevState, data.confidence_levels]);
+        
+        // Now you can access the confidence levels in the state variable 'confidenceLevels'
+        console.log('Received confidence levels:', data.confidence_levels);
       } catch (error) {
         console.error('Error detecting facial confidence:', error);
       }
@@ -237,20 +249,6 @@ export const HumanResources = () => {
     </div>
   );
 
-  useEffect(() => {
-    if (capturedImages.length > 0) {
-      sendImagesForDetection();
-    }
-  }, [capturedImages]);
-
-  useEffect(() => {
-    if (!videoFinished) {
-      startRecording(); // Start recording when video finishes playing
-    } else {
-      stopRecording(); // Stop recording when video starts playing again
-    }
-  }, [videoFinished]);
-
   return (
     <div>
       {questions.length > 0 && (
@@ -266,7 +264,6 @@ export const HumanResources = () => {
                 <p>Answer the question:</p>
                 <Webcam ref={webRef} />
                 <button onClick={() => { captureImage(); handleContinue(); }} className="btn btn-primary">Continue</button>
-                <button onClick={() => recording ? stopRecording() : startRecording()} className="btn btn-primary">{recording ? "Stop Recording" : "Start Recording"}</button>
                 <p>Transcribed Text: {transcribedText}</p>
                 {fillerPercentage !== null && (
                   <p>Filler Words Percentage: {fillerPercentage.toFixed(2)}%</p>
@@ -298,3 +295,4 @@ export const HumanResources = () => {
   );
 };
 
+export default HumanResources;
