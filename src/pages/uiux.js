@@ -295,7 +295,7 @@ export const UIUX = () => {
   );
 };
 
-export default HumanResources;
+
 
 
 
