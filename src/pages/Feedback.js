@@ -1,41 +1,64 @@
-import React from "react";
-import NavBar from '../components/NavBar';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './feedback.css';
-import { Confidence_level } from "../components/Confidence_level";
-import { Filler_words } from "../components/Filler_words";
-import { Time_spent } from "../components/Time_spent";
+import { Circle } from 'rc-progress';
 
-export const Feedback = ({ askedQuestions }) => {
-    return (
-        <>
-            <NavBar/>
-            <div className="container-fluid">
-                <div className="congratulations">
-                    <h1>Congratulations on completing the interview simulator!</h1>
-                    <p> 
-                        Your dedication and thoughtful responses showcase your skills and preparation. 
-                        <span >Well done! Best of luck in all your future interviews. Remember,</span> 
-                        each experience is a stepping stone to success. Keep up the excellent work!
-                    </p>
-                </div>
-                <hr />
+export const Feedback = () => {
+  const location = useLocation();
+  const { askedQuestions, fillerPercentages, confidenceLevels } = location.state || {};
+  
+  // Calculate overall filler percentage
+  const overallFillerPercentage = fillerPercentages.reduce((acc, curr) => acc + curr, 0) / fillerPercentages.length;
 
-                <div className="card-box">
-                    <div className='cards-container'>
-                        <Confidence_level title='Facial Confident Level'/>
-                        <Filler_words title='Filler Words'/>
-                        <Time_spent title='Overall Answer Time'/>
-                    </div>
-                </div>
-                <div className="asked-questions">
-                    <h2>Asked Questions</h2>
-                    <ul>
-                        {askedQuestions && Array.isArray(askedQuestions) && askedQuestions.map((question, index) => (
-                            <li key={index}>{question}</li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-        </>
-    )
-}
+  // Calculate overall confidence level
+  let overallConfidenceLevel = 0; // Initialize overall confidence level
+  if (confidenceLevels && confidenceLevels.length > 0) {
+    overallConfidenceLevel = confidenceLevels.reduce((acc, curr) => acc + curr, 0) / confidenceLevels.length;
+  }
+
+  return (
+    <div>
+      <div className="congratulations">
+        <h1>Congratulations on completing the interview simulator!</h1>
+        <p>Your dedication and thoughtful responses showcase your skills and preparation. Well done! Best of luck in all your future interviews. Remember, each experience is a stepping stone to success. Keep up the excellent work!</p>
+      </div>
+      <hr />
+
+      {/* Display confidence level in the first column */}
+      <div className='row m-5'>
+      <div className='col bg-light mx-3 p-5 rounded'>
+        <h3>Facial Confidence Level</h3>
+        <br />
+        <div style={{ position: 'relative' }}>
+          <Circle percent={overallConfidenceLevel} strokeWidth={10} strokeColor="#3FC7FA" trailWidth={10} trailColor='#D9D9D9' />
+          <p className='text-center fs-2' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', margin: 0 }}>{isNaN(overallConfidenceLevel) ? 'N/A' : `${overallConfidenceLevel.toFixed(2)}%`}</p>
+        </div>
+      </div>
+
+        {/* Display filler words in the remaining columns */}
+        <div className='col bg-light mx-3 p-5 rounded'>
+          <h3>Filler Words</h3>
+          <br />
+          <div style={{ position: 'relative' }}>
+            <Circle percent={overallFillerPercentage} strokeWidth={10} strokeColor="#ff8788" trailWidth={10} trailColor='#808080' />
+            <p className='text-center fs-2' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', margin: 0 }}>{overallFillerPercentage.toFixed(2)}%</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Display asked questions and answers */}
+      <div className="question-box-container">
+        {askedQuestions && askedQuestions.map((question, index) => (
+          <div key={index} className="question-box">
+            <p style={{ color: '#494949', fontSize: '15px', fontWeight: '300'}}>
+              Question {index + 1} <br />  
+              <span style={{ color: '#494949', fontSize: '24px', fontWeight: '300' }}>
+                {question}
+              </span>
+            </p> 
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
