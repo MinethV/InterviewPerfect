@@ -1,0 +1,126 @@
+.team-item {
+    display: flex;
+    backdrop-filter: blur(50px);
+    background-color: rgba(190, 190, 190, 0.15);
+    text-align: center;
+    margin: 60px 70px;
+    padding: 80px 80px;
+    border-radius: 10px 10px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    
+  }
+
+  .team-item:hover {
+    background: #ffffff;
+  
+    color: white;
+  }
+
+  .team-img {
+    display: inline-flex;
+    max-width: 500px;
+    padding: 6px 6px;
+    background-color: #dedede;
+    
+  }
+  
+
+  .step1  {
+    margin-left: 30px;
+    padding: px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'rubic', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+.step-info-1 {
+    color: #7e7e7e;
+    font-style: italic;
+}
+
+.step-info-2 {
+    color: #7e7e7e;
+    font-style: italic;
+}
+
+.step2 {
+    margin-left: 30px;
+    padding:0px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'rubic', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .step-info-3 {
+    color: #7e7e7e;
+    font-style: italic;
+}
+
+.step3 {
+    margin-left: 30px;
+    padding:00px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'rubic', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .step-info-4 {
+    color: #7e7e7e;
+    font-style: italic;
+}
+
+.step4 {
+    margin-left: 30px;
+    padding:0px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'rubic', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}
+
+
+.step-info-5 {
+    color: #7e7e7e;
+    font-style: italic;
+}
+
+.step5 {
+    margin-left: 30px;
+    padding:0px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'rubic', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}
+
+
+
