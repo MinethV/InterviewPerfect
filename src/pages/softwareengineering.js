@@ -28,7 +28,7 @@ export const SoftwareEngineering = () => {
         const fetchInterviewData = async () => {
             try {
                 // Fetch questions
-                const questionsResponse = await fetch(`https://interviewperfect-error-x.koyeb.app/modelvideos/softwareengineering`);
+                const questionsResponse = await fetch(`https://interviewperfect-error-x.koyeb.app/modelvideos/humanresources`);
                 if (!questionsResponse.ok) {
                     throw new Error('Failed to fetch questions');
                 }
@@ -272,8 +272,7 @@ export const SoftwareEngineering = () => {
                                     captureImage();
                                     handleContinue();
                                 }} className="btn btn-primary">Continue
-                                </button>
-                                <p>Transcribed Text: {transcribedText}</p>
+                                </button> 
                                 {fillerPercentage !== null && (
                                     <p>Filler Words Percentage: {fillerPercentage.toFixed(2)}%</p>
                                 )}
@@ -303,7 +302,3 @@ export const SoftwareEngineering = () => {
         </div>
     );
 };
-
-
-
-

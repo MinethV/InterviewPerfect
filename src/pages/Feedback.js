@@ -69,12 +69,12 @@ export const Feedback = () => {
                 </div>
             </div>
 
-            {/* Display asked questions and answers */}
             <div className="question-box-container">
                 {askedQuestions && askedQuestions.map((question, index) => (
                     <div key={index} className="question-box">
                         <p style={{color: '#494949', fontSize: '15px', fontWeight: '300'}}>
                             Question {index + 1} <br/>
+                            <span style={{color: '#494949', fontSize: '24px', fontWeight: '300'}}></span>
                             <span style={{color: '#494949', fontSize: '24px', fontWeight: '300'}}>
                 {question}
               </span>

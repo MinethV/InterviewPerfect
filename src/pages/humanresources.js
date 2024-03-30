@@ -272,8 +272,7 @@ export const HumanResources = () => {
                                     captureImage();
                                     handleContinue();
                                 }} className="btn btn-primary">Continue
-                                </button>
-                                <p>Transcribed Text: {transcribedText}</p>
+                                </button> 
                                 {fillerPercentage !== null && (
                                     <p>Filler Words Percentage: {fillerPercentage.toFixed(2)}%</p>
                                 )}
@@ -303,4 +302,3 @@ export const HumanResources = () => {
         </div>
     );
 };
-
