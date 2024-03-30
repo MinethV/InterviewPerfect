@@ -1,0 +1,32 @@
+.q-container {
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container > div {
+    text-align: center;
+    width: 85%;
+}
+
+.container video {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.answeringcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  
+
+  
