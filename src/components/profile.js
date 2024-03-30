@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Stylesheets/Profile.css';
 import {useAuth0} from "@auth0/auth0-react";
-import {LogoutButton} from "./LogoutButton";
+import {Logoutbutton} from "./Logoutbutton";
 
 export const Profile = () => {
     const {user, isAuthenticated} = useAuth0();
@@ -19,7 +19,7 @@ export const Profile = () => {
                             <span className="name mt-3"><h5>{user.name}</h5></span>
 
                             <div className=" d-flex mt-2">
-                                <LogoutButton/>
+                                <Logoutbutton/>
                             </div>
                             <div className="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center">
                                 <span><i className="fa fa-twitter"></i></span> <span><i

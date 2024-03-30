@@ -9,7 +9,7 @@ import {HumanResources} from './pages/humanresources';
 import {Feedback} from './pages/Feedback';
 import {useState} from 'react'; // Import useState hook
 import {Route, Routes} from 'react-router-dom';
-import {Profile} from "./components/Profile";
+import {Profile} from "./components/profile";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
 
