@@ -1,8 +1,8 @@
 import React from 'react';
 import home from '../images/home.png';
 import field from '../images/field.png';
-import simulator from '../images/simulator.png';
-import video from '../images/video.png';
+import simulator from '../images/video.png';
+import video from '../images/simulator.png';
 import profile from '../images/profile.png';
 
 import './Hiw.css';
@@ -73,7 +73,7 @@ function Howitworks () {
                                 <h3 className="step4"> Step 4</h3>
                                 <div className="step-info-4">
                                     <p>
-                                     "you can go to next question when you finished the current question. that wy you can answer to all 10 question like that."
+                                     "you can go to next question when you finished the current question. that wAy you can answer to all 10 question like that."
                                     </p>
                                     
                                 </div>
